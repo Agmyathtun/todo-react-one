@@ -71,7 +71,7 @@ function App() {
       boxShadow: '0 8px 20px rgba(0,0,0,0.6)',
       background: darkMode ? '#0d1117' : '#f0f0f0',
       color: darkMode ? '#c9d1d9' : '#333',
-      minHeight: '100vh',
+      minHeight: '50vh',
       transition: 'background 0.3s ease, color 0.3s ease'
     }}>
       <button
@@ -108,9 +108,9 @@ function App() {
       <p>Remaining Tasks : {tasks.filter(t => !t.done).length}</p>
       <p>Done : {tasks.filter(t => t.done).length}</p>
       
-      <h1 style={{ marginBottom: '20px' }}>My Todo List</h1>
+      <h1 style={{ marginBottom: '50px', color: darkMode ? '#c9d1d9' : '#333' }}>My Todo List</h1>
 
-      <div style={{ display: 'flex', marginBottom: '20px' }}>
+      <div style={{ display: 'flex', marginBottom: '20px', border:'1px solid #444', borderRadius: '6px', overflow: 'hidden' }}>
         <input
           type="text"
           value={inputValue}
@@ -132,9 +132,10 @@ function App() {
           onClick={addTask}
           style={{
           padding: '12px 24px',
-          borderRadius: '0 6px 6px 0',
+          borderRadius: '0 5px 5px 0',
           background: '#238636',
           color: '#ffffff',
+          border: 'none',
         }}>
           Add
         </button>
@@ -156,7 +157,8 @@ function App() {
                       background: darkMode ? '#0d1117' : '#f0f0f0',
                       borderRadius: '6px',
                       textDecoration: task.done ? 'line-through' : 'none',
-                      opacity: task.done ? 0.6 : 1
+                      opacity: task.done ? 0.6 : 1,
+                      border: '1px solid #444'
                     }}
                   >
                     <input

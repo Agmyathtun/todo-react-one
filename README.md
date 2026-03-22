@@ -1,16 +1,39 @@
-# React + Vite
+# React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, feature-rich Todo List application built with React + Vite. Supports dark/light mode, task editing, persistence, and more.
 
-Currently, two official plugins are available:
+## Live Demo
+https://agmyathtun.github.io/todo-react-one/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Add, edit, delete, and mark tasks as done
+- Clear all completed tasks
+- Real-time remaining / total / done counts
+- Dark / light mode toggle
+- LocalStorage persistence (tasks saved after refresh)
+- Responsive design (mobile-friendly)
 
-## React Compiler
+## Tech Stack
+- React 18
+- Vite (fast dev server & build tool)
+- useState + useEffect hooks
+- Controlled inputs & forms
+- Component composition (props + children)
+- GitHub Pages deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Screenshots
 
-## Expanding the ESLint configuration
+### Light Mode – Adding Tasks
+![Todo Light Mode](screenshots/todo-light-mode.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Dark Mode – Editing Task
+![Todo Dark Mode](screenshots/todo-dark-mode.png)
+
+
+## How to Run Locally
+
+```bash
+git clone https://github.com/Agmyathtun/todo-react-one.git
+cd todo-react-one
+npm install
+npm run dev
